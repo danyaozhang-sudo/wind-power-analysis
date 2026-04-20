@@ -1,6 +1,6 @@
 ---
 name: wind-power-analysis
-description: 风电项目财务测算与报告生成。适用场景：（1）接收风电项目Excel参数文件，完成财务建模（DCF/IRR/NPV/DSCR）；（2）生成包含7张图表的Word和PDF分析报告；（3）对已建模项目进行敏感性分析；（4）更新风电测算固化标准（v2标准：残值=总投资×3%、折旧基数=总投资×97%、DSCR=(净利润+折旧+利息)/(本金+利息)、图表使用Hei.ttf中文化）。当用户发送风电项目Excel或要求"测算"、"财务分析"、"生成报告"时触发。
+description: 风电项目财务测算与报告生成。适用场景：（1）接收风电项目Excel参数文件，完成财务建模（DCF/IRR/NPV/DSCR）；（2）生成包含7张图表的Word和PDF分析报告；（3）对已建模项目进行敏感性分析；（4）更新风电测算固化标准（v2标准：残值=总投资×3%、折旧基数=总投资×97%、DSCR=(净利润+折旧+利息)/(本金+利息)、图表使用Hei.ttf中文化）；（5）v2固化标准更新（2026-04-20）：DSCR计算添加浮点精度保护，中文字体渲染改用fm.fontManager.addfont显式注册Hei.ttf，图表所有中文标签均通过fontproperties参数指定。当用户发送风电项目Excel或要求"测算"、"财务分析"、"生成报告"时触发。
 ---
 
 # Wind Power Financial Analysis Skill

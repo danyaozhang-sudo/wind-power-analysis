@@ -150,7 +150,7 @@ def calculate_model(params):
 
         # DSCR = (净利润+折旧+利息)/(本金+利息)
         debt_service = principal + interest
-        d['dscr'] = (net_profit + annual_dep + interest) / debt_service if debt_service > 0 else None
+        d['dscr'] = (net_profit + annual_dep + interest) / debt_service if debt_service > 1e-6 else None
 
         data.append(d)
 
